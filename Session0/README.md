@@ -128,5 +128,5 @@ Answers: Kernels are initilised randomly in the beginning as it is not known wha
 
 
 Answers: While training a deep neural network, the input image matrix of nxn in the batch is feed to the neural network. The kernel is used to extract features
-and backpropagation helps in getting the proper values, after that we end output matrix of size 9x9 or 7x7 or any other and check the predicted value which in 
+and backpropagation helps in getting the proper values. DNN first detect edges and gradient, then pattern and textures, the part of objects and finally objects after that we end output matrix of size 9x9 or 7x7 or any other and check the predicted value which in 
 return predicted class name.
