@@ -1,17 +1,22 @@
 EVA - 7 | Session 0 assignments
 
 1. What are Channels and Kernels (according to EVA)?
+
 Answer: Channels is the container of semantic information. In an image there could be n number of channels. Channel is a feature container.
 A kernel is a matrix which convolve with input matrix and extract features. Mostly 3x3 kernel is used, because of its advantages. 
 It is also called as feature extractor or filter.
 
 2. Why should we (nearly) always use 3x3 kernels?
+
+
 Answer: 3x3 kernel have a lot of advantages. 
         >> Less paramerter.
         >> Symmetry
         >> Computing time is less.
 
 4. How many times do we need to perform 3x3 convolutions operations to reach close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...)
+
+
 Answer: 
        1. 199x199 - 3x3 - 197x197
        2. 197x197 - 3x3 - 195x195
@@ -115,9 +120,13 @@ Answer:
       
 
 5. How are kernels initialized? 
+
+
 Answers: Kernels are initilised randomly in the beginning as it is not known what values it should take. While training, back propagation help kernel to get right values.
 
 6. What happens during the training of a DNN?
+
+
 Answers: While training a deep neural network, the input image matrix of nxn in the batch is feed to the neural network. The kernel is used to extract features
 and backpropagation helps in getting the proper values, after that we end output matrix of size 9x9 or 7x7 or any other and check the predicted value which in 
 return predicted class name.
